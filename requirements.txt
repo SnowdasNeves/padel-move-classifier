@@ -1,0 +1,11 @@
+pandas
+numpy
+tsfel
+scikit-learn
+paho-mqtt
+bleak
+aioconsole
+uuid
+streamlit
+streamlit-autorefresh
+streamlit-option-menu
