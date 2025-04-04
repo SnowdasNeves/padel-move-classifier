@@ -4,10 +4,20 @@ This repository provides a real-time machine learning classifier for padel moves
 
 ## Table of Contents
 
+- [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Contributing](#contributing)
+
+## Project Structure
+
+The repository consists of the following key files:
+
+- **`accelerometer_data_readings.ino`**: Arduino code for the M5StickCPlus to read accelerometer data and transmit it via MQTT.
+- **`model_training.py`**: Python script to train the Random Forest classifier using collected accelerometer data.
+- **`realtime_acquisition.py`**: Python script to receive accelerometer data in real-time from the M5StickCPlus and make predictions using the trained model.
+- **`streamlit_webpage.py`**: Streamlit application to visualize real-time predictions and provide user instructions.
+- **`requirements.txt`**: List of Python dependencies required to run the project.
 
 ## Installation
 
@@ -64,16 +74,6 @@ To set up the project, follow these steps:
 3. **Perform padel moves:**
 
    With the M5StickCPlus device properly set up and the system running, press the 'B' button on the device to start data acquisition. You have 2 seconds to perform a padel move. The system will analyze the accelerometer data and display the predicted move on the Streamlit web application.
-
-## Project Structure
-
-The repository consists of the following key files:
-
-- **`accelerometer_data_readings.ino`**: Arduino code for the M5StickCPlus to read accelerometer data and transmit it via MQTT.
-- **`model_training.py`**: Python script to train the Random Forest classifier using collected accelerometer data.
-- **`realtime_acquisition.py`**: Python script to receive accelerometer data in real-time from the M5StickCPlus and make predictions using the trained model.
-- **`streamlit_webpage.py`**: Streamlit application to visualize real-time predictions and provide user instructions.
-- **`requirements.txt`**: List of Python dependencies required to run the project.
 
 ## Contributing
 
